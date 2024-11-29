@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye Disease Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Eye Disease Prediction System</h1>
+        <form action="/predict" method="POST" enctype="multipart/form-data">
+            <label for="patient_id">Patient ID:</label>
+            <input type="text" id="patient_id" name="patient_id" required>
+
+            <label for="name">Patient Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="image">Upload Retinal Image:</label>
+            <input type="file" id="image" name="image" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+</head>
+<body>
+    <div class="result">
+        <h1>Prediction Result</h1>
+        <p><strong>Patient ID:</strong> {{ patient_id }}</p>
+        <p><strong>Name:</strong> {{ name }}</p>
+        <p><strong>Disease:</strong> {{ disease }}</p>
+        <p><strong>Percentage:</strong> {{ percentage }}%</p>
+        <p><strong>Suggestions:</strong> {{ suggestions }}</p>
+        <h2>Previous Records</h2>
+        {% for record in history %}
+            <p>{{ record }}</p>
+        {% endfor %}
+    </div>
+</body>
+</html>
